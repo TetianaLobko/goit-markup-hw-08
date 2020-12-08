@@ -1,0 +1,127 @@
+@media screen and (max-width:767px) {
+
+    .header {
+        position: relative; 
+    }
+
+    .header-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid $cl-frame-header;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+           
+        &.is-open {
+            display: block;
+            z-index: 222;
+            background-color: $white;
+        }
+    }
+
+    .contacts {
+        padding-bottom: 60px;
+    }
+    .contacts-list:not(:last-child) {
+        margin-bottom: 16px;
+    }
+}
+
+.header-nav {
+    display: flex;
+    
+    align-items: center;
+}
+
+.header-menu {
+    @media screen and (min-width:768px) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.header-underlined {
+    border-bottom: 1px solid $cl-frame-header;
+}
+
+.contacts{
+    text-align: center;
+    
+    @media screen and (min-width:768px) {
+        padding-top: 21px;
+        padding-bottom: 21px;
+        text-align: left;
+        margin-left: 74px;
+        font-size: 12px;
+        line-height: 1.172;
+    }
+    
+        @media screen and (min-width:1200px) {
+        display: flex;
+        align-items: center;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-left: 305px;        
+    }
+}
+
+.contacts-link {
+ 
+    font-weight: 500;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+    color: $color-primary;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+   
+    @media screen and (min-width:1200px) {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+}
+
+.contacts-list:not(:last-child) {
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        margin-bottom: 10px;
+    }
+
+    @media screen and (min-width:1200px) {
+        margin-right: 50px;
+    }
+}
+
+.contacts-svg-mail {
+    width: 14px;
+    height: 10px;
+    @media screen and (min-width:1120px) {
+        width: 16px;
+        height: 12px;
+    }
+}
+
+.contacts-svg-tel {
+    width: 10px;
+    height: 14px;
+    @media screen and (min-width:1120px) {
+        width: 10px;
+        height: 16px;
+    }
+}
+
+.contacts-svg {
+    margin-right: 10px;
+    fill: currentColor;
+    vertical-align: top;
+}
+
+.contacts-link:hover .contacts-svg {
+    fill: currentColor;
+}

@@ -1,0 +1,60 @@
+.btn {
+    display: inline-block;
+    padding: 10px 0px;
+    border-radius: 4px;
+    border: 0;
+    width: 200px;
+    height: 50px;
+
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    align-items: center; 
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: $white;
+    background-color: $accent-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    &:hover, 
+    &:focus {
+        color: $accent-color;
+        background-color: $white;
+    }
+}
+
+.button-menu-mobile {
+    display: inline-flex;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: transparent;
+    margin-left: auto;
+    outline: transparent;
+
+    .icon-menu-close {
+        display: none;
+    }
+
+    @media screen and (min-width:768px){
+        display: none;
+    }
+}
+
+.button-menu-mobile.is-open {
+    .icon-menu-close {
+        display: block;
+    }
+
+    .icon-menu-open {
+        display: none;
+    }
+}
+
+.button-menu-mobile:focus .mobile-menu-svg {
+    fill: $accent-color;
+    
+}

@@ -1,0 +1,67 @@
+.mailing {
+        
+    @media screen and (max-width:1199px) {
+        text-align: center;
+    }
+
+    @media screen and (min-width:1200px) {
+        margin-left: auto;
+    }
+
+}
+.form-footer {
+    @media screen and (min-width:1200px) {
+        display: flex;
+    }
+}
+.mailing-input {
+    width: 100%;
+    max-width: 450px;
+    padding: 15px 16px;
+    background-color: inherit;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.6);
+    
+    &::placeholder {
+        font-size: 16px;
+        line-height: 1.25;
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    @media screen and (min-width:1200px){
+        width: 358px;
+        margin-right: 12px;
+    }
+}
+
+.button-footer {
+    position: relative;
+   
+    @media screen and (min-width:768px) and (max-width:1199px){
+        display: block;
+        margin-right: auto;
+        margin-left: auto;        
+    }
+}
+
+.subscribe {
+    padding-right: 25px;
+}
+
+.icon-email {
+    position: absolute;
+    top: 13px;
+    right: 28px;
+    width: 24px;
+    height: 24px;
+    fill: $white;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
+}
+
+.button-footer:hover  .icon-email,
+.button-footer:focus  .icon-email {
+    fill: $accent-color;
+}
