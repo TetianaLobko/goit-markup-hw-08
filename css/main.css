@@ -384,7 +384,7 @@ h1, h2, h3, p {
 .contacts-svg {
   margin-right: 10px;
   fill: currentColor;
-  vertical-align: top;
+  vertical-align: middle;
 }
 
 .contacts-link:hover .contacts-svg {
